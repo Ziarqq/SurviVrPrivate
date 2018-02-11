@@ -9,6 +9,7 @@ public class DoorCellOpen : MonoBehaviour {
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject TheDoor;
+    public GameObject ExtraCrosshair;
     public AudioSource Sound;
 
 	void Update ()
@@ -20,11 +21,13 @@ public class DoorCellOpen : MonoBehaviour {
     {
         if(Distance <= 2)
         {
+            ExtraCrosshair.SetActive(true);
             ActionDisplay.SetActive(true);
             ActionText.SetActive(true);
         }
         if(Distance > 2)
         {
+            ExtraCrosshair.SetActive(false);
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
         }
@@ -42,6 +45,7 @@ public class DoorCellOpen : MonoBehaviour {
     }
     void OnMouseExit()
     {
+        ExtraCrosshair.SetActive(false);
         ActionDisplay.SetActive(false);
         ActionText.SetActive(false);
     }
