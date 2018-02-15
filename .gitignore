@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ###
 # Unity folders and files
 ###
@@ -81,4 +82,46 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 >>>>>>> ed9b3150e9ee77651b8afd23c2a209020a4d84d1
+=======
+###
+# Unity folders and files
+###
+/[Aa]ssets/AssetStoreTools*
+/[Bb]uild/
+/[Ll]ibrary/
+/[Ll]ocal[Cc]ache/
+/[Oo]bj/
+/[Tt]emp/
+/[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
+
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.DS_Store
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+>>>>>>> 468a7509140fea477b72ec02299d35c80f594d61
 Thumbs.db
