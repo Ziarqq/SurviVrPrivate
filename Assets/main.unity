@@ -2896,7 +2896,7 @@ Prefab:
         type: 2}
       propertyPath: m_Animations.Array.data[1]
       value: 
-      objectReference: {fileID: 7400000, guid: eb8b44467de2e9e4d9a56b6fead17cb9, type: 2}
+      objectReference: {fileID: 7400000, guid: 14481ee45069cd848997992c19bb961e, type: 2}
     - target: {fileID: 4240266216465598, guid: b9096bfb1fb5bca4f87c6469d774ea54, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
