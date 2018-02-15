@@ -1,4 +1,3 @@
-<<<<<<< HEAD:SurviVrPrivate/Assets/Scripts/DoorCellOpen.cs
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
