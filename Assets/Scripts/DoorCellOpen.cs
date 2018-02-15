@@ -42,6 +42,7 @@ public class DoorCellOpen : MonoBehaviour {
                 ActionText.SetActive(false);
                 anim.Play("DoorOpenAnim");
                 Sound.Play();
+                StartCoroutine(DoorClose());
             }
         }
 
@@ -51,5 +52,12 @@ public class DoorCellOpen : MonoBehaviour {
         ExtraCrosshair.SetActive(false);
         ActionDisplay.SetActive(false);
         ActionText.SetActive(false);
+    }
+    IEnumerator DoorClose()
+    {
+        yield return new WaitForSeconds(5);
+        anim.Play("DoorCloseAnim");
+        Sound.Play();
+        this.GetComponent<BoxCollider>().enabled = true;
     }
 }
