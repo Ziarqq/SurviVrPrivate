@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: ff319058829e9d140a0103f25ad96f05
+timeCreated: 1519773387
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Schwachsinn 3D Filled
+  fontNames:
+  - Schwachsinn 3D Filled
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6b68420b3b269634f9d65d22c9abaac6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
