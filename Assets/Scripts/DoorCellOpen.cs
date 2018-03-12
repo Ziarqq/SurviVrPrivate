@@ -54,7 +54,7 @@ public class DoorCellOpen : MonoBehaviour {
     }
     IEnumerator DoorClose()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         anim.Play("DoorCloseAnim");
         Sound.Play();
         this.GetComponent<BoxCollider>().enabled = true;
