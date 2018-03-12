@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 8aebaa1490e3a154a904ef288d051122
+timeCreated: 1519773365
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JMH Wulfila
+  fontNames:
+  - JMH Wulfila
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3d68b2dd0ef148446b288655afa99ce3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
