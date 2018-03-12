@@ -19,8 +19,9 @@ public class Opening : MonoBehaviour {
     {
         yield return new WaitForSeconds(0.5f);
         TextBox.GetComponent<Text>().text = "Where am I...";
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         TextBox.GetComponent<Text>().text = "";
+        yield return new WaitForSeconds(1f);
         ThePlayer.GetComponent<FirstPersonController>().enabled = true;
 
         
