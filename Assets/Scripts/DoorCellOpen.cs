@@ -16,7 +16,6 @@ public class DoorCellOpen : MonoBehaviour {
     {
         anim = TheDoor.GetComponent<Animation>();
         Distance = PlayerCasting.DistanceFromTarget;
-        ActionText.GetComponent<Text>().text = "Open the door";
 	}
 
     void OnMouseOver()
