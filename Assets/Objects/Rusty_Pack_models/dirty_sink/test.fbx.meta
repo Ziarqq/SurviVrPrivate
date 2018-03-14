@@ -9,8 +9,14 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: polySurface1685
+    6400000: //RootNode
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn111
+    second: {fileID: 2100000, guid: 4907590af6c13fa47b34a350ea58f049, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -42,7 +48,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 0.01
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
