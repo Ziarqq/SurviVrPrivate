@@ -2820,7 +2820,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1161802286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e39b5707b34f1254babf3b8676bb47fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cd1c3de4c6a0674cad069f3215c2c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1166792188
@@ -4882,6 +4882,10 @@ Prefab:
     - target: {fileID: 19800000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
       propertyPath: ShapeModule.radiusThickness
