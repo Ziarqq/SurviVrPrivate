@@ -350,16 +350,32 @@
     <Compile Include="Assets\Player\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Player\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Player\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
+    <Compile Include="Assets\Scripts\ApplicationManager.cs" />
+    <Compile Include="Assets\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\Chase.cs" />
     <Compile Include="Assets\Scripts\DecalController.cs" />
     <Compile Include="Assets\Scripts\DoorCellOpen.cs" />
     <Compile Include="Assets\Scripts\DoorOpenKey.cs" />
+    <Compile Include="Assets\Scripts\DragMe.cs" />
+    <Compile Include="Assets\Scripts\DragPanel.cs" />
+    <Compile Include="Assets\Scripts\DropMe.cs" />
     <Compile Include="Assets\Scripts\Items.cs" />
     <Compile Include="Assets\Scripts\KeyPickUp.cs" />
+    <Compile Include="Assets\Scripts\LoadMSOnClick.cs" />
+    <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\ObjToggler.cs" />
+    <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\PickUpAxe.cs" />
     <Compile Include="Assets\Scripts\PlayerCasting.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\quit1.cs" />
+    <Compile Include="Assets\Scripts\ResizePanel.cs" />
+    <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
+    <Compile Include="Assets\Scripts\SelectOnInput.cs" />
     <Compile Include="Assets\Scripts\Sequences\Opening.cs" />
+    <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
+    <Compile Include="Assets\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Scripts\WaterDrops.cs" />
     <Compile Include="Assets\UIStuff\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\UIStuff\Scripts\ApplicationManager.cs" />
@@ -372,6 +388,7 @@
     <Compile Include="Assets\UIStuff\Scripts\ObjToggler.cs" />
     <Compile Include="Assets\UIStuff\Scripts\PanelManager.cs" />
     <Compile Include="Assets\UIStuff\Scripts\quit1.cs" />
+    <Compile Include="Assets\UIStuff\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\UIStuff\Scripts\ResizePanel.cs" />
     <Compile Include="Assets\UIStuff\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\UIStuff\Scripts\SelectOnInput.cs" />
@@ -380,6 +397,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\brick-957827.shader" />
+    <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\Models\Key\readME keys.txt" />
     <None Include="Assets\Objects\Locker\Shaders\VIS_BumpSpec.shader" />
     <None Include="Assets\Player\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

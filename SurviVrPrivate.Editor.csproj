@@ -315,6 +315,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\brick-957827.shader" />
+    <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\Models\Key\readME keys.txt" />
     <None Include="Assets\Objects\Locker\Shaders\VIS_BumpSpec.shader" />
     <None Include="Assets\Player\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
