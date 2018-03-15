@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 1b568d6b56e27854e9d7212dae77cd5d
+timeCreated: 1519773319
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Beholder Outline Filled
+  fontNames:
+  - Beholder Outline Filled
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
