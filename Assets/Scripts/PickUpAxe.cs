@@ -18,7 +18,7 @@ public class PickUpAxe: MonoBehaviour
         Distance = PlayerCasting.DistanceFromTarget;
     }
 
-    void OnMouseOver()
+    void OnMouseOver(Collider hit)
     {
         if (Distance <= 2)
         {
@@ -36,7 +36,6 @@ public class PickUpAxe: MonoBehaviour
         {
             if (Distance <= 2)
             {
-                this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 RealAxe.SetActive(true);

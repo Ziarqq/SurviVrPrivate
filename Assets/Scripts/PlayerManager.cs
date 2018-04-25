@@ -10,6 +10,8 @@ public class PlayerManager : MonoBehaviour {
     public GameObject ThePlayer;
     public GameObject DeathScene;
     public GameObject DeathText;
+    public Inventory inventory;
+    public GameObject PickupText;
 
     int Health = 100;
     public Slider HealthBar;
@@ -30,6 +32,18 @@ public class PlayerManager : MonoBehaviour {
             HealthBar.value -= 0.1f;
         }
     }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        IInventoryItem item = hit.collider.GetComponent<IInventoryItem>();
+        if(item != null)
+        {
+            inventory.AddItem(item);
+            StartCoroutine(PickUpText());
+        }
+
+    }
+
+
     IEnumerator Death()
     { 
         ThePlayer.GetComponent<FirstPersonController>().enabled = false;
@@ -40,5 +54,11 @@ public class PlayerManager : MonoBehaviour {
         yield return new WaitForSeconds(5f);
         DeathText.GetComponent<Text>().text = "";
         SceneManager.LoadScene("main-menu");
+    }
+    IEnumerator PickUpText()
+    {
+        PickupText.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        PickupText.SetActive(false);
     }
 }
