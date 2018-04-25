@@ -11,36 +11,76 @@ public class PlayerManager : MonoBehaviour {
     public GameObject DeathScene;
     public GameObject DeathText;
     public Inventory inventory;
-    public GameObject PickupText;
+    public HUD hud;
+    public GameObject Hand; 
 
     int Health = 100;
     public Slider HealthBar;
+    void Start()
+    {
+        inventory.ItemUsed += Inventory_ItemUsed;
+        inventory.ItemRemoved += Inventory_ItemRemoved;
+    }
+
+    private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
+    {
+        IInventoryItem item = e.Item;
+
+        GameObject goItem = (item as MonoBehaviour).gameObject;
+        goItem.SetActive(true);
+
+        goItem.transform.parent = null;
+    }
+
+    private void Inventory_ItemUsed(object sender, InventoryEventArgs e)
+    {
+        IInventoryItem item = e.Item;
+        // Do something with the item
+        GameObject goItem = (item as MonoBehaviour).gameObject;
+        goItem.SetActive(true);
+
+        goItem.transform.parent = Hand.transform;
+
+    }
 
     void Update()
     {
+        if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
+        {
+            inventory.AddItem(mItemToPickup);
+            mItemToPickup.OnPickup();
+            hud.CloseMessagePanel();
+            
+        }
         if (Health <= 0)
         {
             StartCoroutine(Death());
         }
     }
+    private IInventoryItem mItemToPickup = null;
 
     void OnTriggerEnter(Collider other)
-    {
+    { 
         if(other.CompareTag("Enemy"))
         {
             Health -= 10;
             HealthBar.value -= 0.1f;
         }
-    }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        IInventoryItem item = hit.collider.GetComponent<IInventoryItem>();
-        if(item != null)
+        IInventoryItem item = other.GetComponent<Collider>().GetComponent<IInventoryItem>();
+        if (item != null)
         {
-            inventory.AddItem(item);
-            StartCoroutine(PickUpText());
+            mItemToPickup = item;
+            hud.OpenMessagePanel("");
         }
-
+    }
+    void OnTriggerExit(Collider other)
+    {
+        IInventoryItem item = other.GetComponent<Collider>().GetComponent<IInventoryItem>();
+        if (item != null)
+        {
+            hud.CloseMessagePanel();
+            mItemToPickup = null;
+        }
     }
 
 
@@ -55,10 +95,5 @@ public class PlayerManager : MonoBehaviour {
         DeathText.GetComponent<Text>().text = "";
         SceneManager.LoadScene("main-menu");
     }
-    IEnumerator PickUpText()
-    {
-        PickupText.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        PickupText.SetActive(false);
-    }
+
 }
