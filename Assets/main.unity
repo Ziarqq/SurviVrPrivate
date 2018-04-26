@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.636
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36038023, g: 0.40165037, b: 0.46658057, a: 0.636}
+  m_IndirectSpecularColor: {r: 0.36038065, g: 0.40165034, b: 0.46658087, a: 0.636}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -9726,6 +9726,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 23.826185
       objectReference: {fileID: 0}
+    - target: {fileID: 1043346862074072, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 2}
   m_IsPrefabParent: 0
@@ -14371,6 +14375,18 @@ Transform:
   m_PrefabParentObject: {fileID: 4883238341347538, guid: a2c3c38c688d8924fa5b747fb1f54c58,
     type: 2}
   m_PrefabInternal: {fileID: 19115036}
+--- !u!65 &891513108
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 891513104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 83.14221, y: 22.294601, z: 24.281199}
+  m_Center: {x: 9.989633, y: -0.40404835, z: 0.30164832}
 --- !u!1 &892744633
 GameObject:
   m_ObjectHideFlags: 0
@@ -16052,7 +16068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 103.29999, y: 16.600098}
+  m_AnchoredPosition: {x: 103.299805, y: 16.600098}
   m_SizeDelta: {x: 159.31006, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000664804
@@ -16513,7 +16529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 72.52, y: 3.5}
+  m_AnchoredPosition: {x: 3.6, y: -54.7}
   m_SizeDelta: {x: 305.03, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1026455031
@@ -16536,7 +16552,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 823268d3fd8d90048b91c7fa13de94ec, type: 3}
     m_FontSize: 14
     m_FontStyle: 1
     m_BestFit: 0
@@ -16683,6 +16699,10 @@ Prefab:
     - target: {fileID: 412390, guid: 381bdf9c7f27cce46b2699033a9b735a, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 143668, guid: 381bdf9c7f27cce46b2699033a9b735a, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 381bdf9c7f27cce46b2699033a9b735a, type: 2}
@@ -23084,6 +23104,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.13236763
       objectReference: {fileID: 0}
+    - target: {fileID: 1799558748252334, guid: 73dd7a893b9f3b547a73fc800af96e4f, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73dd7a893b9f3b547a73fc800af96e4f, type: 2}
   m_IsPrefabParent: 0
@@ -28817,6 +28841,22 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 457228, guid: 189dff70245addd45bf37c2e992c9912, type: 2}
   m_PrefabInternal: {fileID: 1746595728}
+--- !u!1 &1746609746 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 168154, guid: 95077ac1a27428f4cb087e309b312fdf, type: 2}
+  m_PrefabInternal: {fileID: 680447691}
+--- !u!65 &1746609748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746609746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5240951, y: 0.20989145, z: 0.12040814}
+  m_Center: {x: 0.016296709, y: -0.00054995104, z: 0.013727621}
 --- !u!1 &1748311391
 GameObject:
   m_ObjectHideFlags: 0
@@ -34709,6 +34749,10 @@ Prefab:
     - target: {fileID: 444442, guid: b01fa194940f0624ca7e3df13bed1969, type: 2}
       propertyPath: m_LocalScale.z
       value: 2.5537872
+      objectReference: {fileID: 0}
+    - target: {fileID: 183500, guid: b01fa194940f0624ca7e3df13bed1969, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b01fa194940f0624ca7e3df13bed1969, type: 2}
