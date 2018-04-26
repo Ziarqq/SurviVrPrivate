@@ -29,6 +29,7 @@ public class PlayerManager : MonoBehaviour {
 
         GameObject goItem = (item as MonoBehaviour).gameObject;
         goItem.SetActive(true);
+
         goItem.transform.parent = null;
     }
 
@@ -45,11 +46,10 @@ public class PlayerManager : MonoBehaviour {
 
     void Update()
     {
-
         if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
-            anim.SetTrigger("PickUp");
             inventory.AddItem(mItemToPickup);
+            anim.SetTrigger("PickUp");
             mItemToPickup.OnPickup();
             hud.CloseMessagePanel();
             

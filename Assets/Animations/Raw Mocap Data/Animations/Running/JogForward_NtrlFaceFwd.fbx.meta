@@ -173,9 +173,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'LeftLeg'
-      : position error = 7.696520 mm\n\t'LeftFoot' : position error = 15.233778 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -192,16 +190,16 @@ ModelImporter:
     - serializedVersion: 16
       name: JogForward_NtrlFaceFwd
       takeName: _12_a_U1_M_P_JogForward_NtrlFaceFwd__Fb_p0_No_0_PJ_3
-      firstFrame: 43
-      lastFrame: 84
+      firstFrame: 28
+      lastFrame: 511
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
