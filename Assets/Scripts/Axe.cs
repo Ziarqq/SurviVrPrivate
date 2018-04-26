@@ -25,5 +25,4 @@ public class Axe : InventoryItemBase
         RealAxe.SetActive(true);
     }
 
-
 }

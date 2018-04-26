@@ -48,5 +48,4 @@ public class InventoryItemBase : MonoBehaviour,IInventoryItem {
     public Vector3 PickRotation;
 
     public Vector3 DropRotation;
-
 }
