@@ -16046,7 +16046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 103.29999, y: 16.600098}
+  m_AnchoredPosition: {x: 103.299805, y: 16.600098}
   m_SizeDelta: {x: 159.31006, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000664804
@@ -32852,6 +32852,8 @@ MonoBehaviour:
   ThePlayer: {fileID: 835064586}
   FadeScreen: {fileID: 1916425185}
   TextBox: {fileID: 762319424}
+  HUD: {fileID: 1376406101}
+  slider: {fileID: 1000664802}
 --- !u!1 &2003151180
 GameObject:
   m_ObjectHideFlags: 0
