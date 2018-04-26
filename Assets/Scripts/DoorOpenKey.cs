@@ -44,7 +44,6 @@ public class DoorOpenKey : MonoBehaviour {
                 ActionText.SetActive(false);
                 anim.Play("DoorOpenAnim");
                 Sound.Play();
-                Items.GotKey = false;
                 StartCoroutine(DoorClose());
             }
             else

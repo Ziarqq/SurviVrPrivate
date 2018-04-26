@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Axe : InventoryItemBase
-{
-    public GameObject RealAxe;
+public class Key : InventoryItemBase{
+
     public override string Name
     {
         get
         {
-            return "Axe";
+            return "Key";
         }
     }
 
@@ -22,7 +21,6 @@ public class Axe : InventoryItemBase
     public override void OnPickup()
     {
         base.OnPickup();
-        RealAxe.SetActive(true);
+        Items.GotKey = true;
     }
-
 }
