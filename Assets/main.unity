@@ -11832,6 +11832,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 494596, guid: acb5b460622c8ee4b825a3e68c33c1b6, type: 2}
   m_PrefabInternal: {fileID: 744923723}
+--- !u!95 &746681897 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9526514, guid: 1d3b1a1513de66247974634911345b98,
+    type: 2}
+  m_PrefabInternal: {fileID: 605288906}
 --- !u!1001 &759154281
 Prefab:
   m_ObjectHideFlags: 0
@@ -13018,6 +13023,7 @@ MonoBehaviour:
   inventory: {fileID: 1570730834}
   hud: {fileID: 1376406106}
   Hand: {fileID: 225770654}
+  anim: {fileID: 746681897}
   HealthBar: {fileID: 1000664804}
 --- !u!65 &835064594
 BoxCollider:
@@ -16046,7 +16052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 103.299805, y: 16.600098}
+  m_AnchoredPosition: {x: 103.29999, y: 16.600098}
   m_SizeDelta: {x: 159.31006, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000664804

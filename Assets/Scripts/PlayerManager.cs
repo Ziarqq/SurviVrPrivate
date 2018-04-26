@@ -12,7 +12,8 @@ public class PlayerManager : MonoBehaviour {
     public GameObject DeathText;
     public Inventory inventory;
     public HUD hud;
-    public GameObject Hand; 
+    public GameObject Hand;
+    public Animator anim;
 
     int Health = 100;
     public Slider HealthBar;
@@ -38,7 +39,6 @@ public class PlayerManager : MonoBehaviour {
         // Do something with the item
         GameObject goItem = (item as MonoBehaviour).gameObject;
         goItem.SetActive(true);
-
         goItem.transform.parent = Hand.transform;
 
     }
@@ -47,6 +47,7 @@ public class PlayerManager : MonoBehaviour {
     {
         if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
+            anim.SetTrigger("Grab");
             inventory.AddItem(mItemToPickup);
             mItemToPickup.OnPickup();
             hud.CloseMessagePanel();
