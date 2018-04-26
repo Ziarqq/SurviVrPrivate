@@ -45,6 +45,10 @@ public class PlayerManager : MonoBehaviour {
 
     void Update()
     {
+        if(Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("Attack");
+        }
         if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
             anim.SetTrigger("Grab");
