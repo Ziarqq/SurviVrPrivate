@@ -14,9 +14,9 @@ public class Opening : MonoBehaviour {
 
 	void Start () {
         ThePlayer.GetComponent<FirstPersonController>().enabled = false;
+        StartCoroutine(ScenePlayer());
         HUD.SetActive(false);
         slider.SetActive(false);
-        StartCoroutine(ScenePlayer());
 	}
 
     IEnumerator ScenePlayer ()

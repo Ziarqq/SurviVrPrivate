@@ -199,8 +199,8 @@ ModelImporter:
     - serializedVersion: 16
       name: IdleGrab_Neutral
       takeName: _121_a_U1_M_P_idleGrab_Neutral__Fb_p0_No_0_PJ_1
-      firstFrame: 313
-      lastFrame: 455
+      firstFrame: 299
+      lastFrame: 413
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
