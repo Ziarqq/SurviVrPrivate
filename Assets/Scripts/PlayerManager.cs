@@ -12,8 +12,7 @@ public class PlayerManager : MonoBehaviour {
     public GameObject DeathText;
     public Inventory inventory;
     public HUD hud;
-    public GameObject Hand;
-    public Animator anim;
+    public GameObject Hand; 
 
     int Health = 100;
     public Slider HealthBar;
@@ -49,7 +48,6 @@ public class PlayerManager : MonoBehaviour {
         if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
             inventory.AddItem(mItemToPickup);
-            anim.SetTrigger("PickUp");
             mItemToPickup.OnPickup();
             hud.CloseMessagePanel();
             

@@ -13018,7 +13018,6 @@ MonoBehaviour:
   inventory: {fileID: 1570730834}
   hud: {fileID: 1376406106}
   Hand: {fileID: 225770654}
-  anim: {fileID: 1708490317}
   HealthBar: {fileID: 1000664804}
 --- !u!65 &835064594
 BoxCollider:
@@ -27971,11 +27970,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706001666}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &1708490317 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9526514, guid: 1d3b1a1513de66247974634911345b98,
-    type: 2}
-  m_PrefabInternal: {fileID: 605288906}
 --- !u!1001 &1711296899
 Prefab:
   m_ObjectHideFlags: 0
