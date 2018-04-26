@@ -21,7 +21,7 @@ public class Axe : InventoryItemBase
 
     public override void OnPickup()
     {
-        base.OnPickup();
+        base.OnPickup(); 
         RealAxe.SetActive(true);
     }
 

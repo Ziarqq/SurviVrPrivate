@@ -45,6 +45,7 @@ public class PlayerManager : MonoBehaviour {
 
     void Update()
     {
+
         if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
             inventory.AddItem(mItemToPickup);
