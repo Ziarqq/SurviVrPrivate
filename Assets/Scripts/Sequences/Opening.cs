@@ -9,9 +9,13 @@ public class Opening : MonoBehaviour {
     public GameObject ThePlayer;
     public GameObject FadeScreen;
     public GameObject TextBox;
+    public GameObject HUD;
+    public GameObject slider;
 
 	void Start () {
         ThePlayer.GetComponent<FirstPersonController>().enabled = false;
+        HUD.SetActive(false);
+        slider.SetActive(false);
         StartCoroutine(ScenePlayer());
 	}
 
@@ -23,6 +27,8 @@ public class Opening : MonoBehaviour {
         TextBox.GetComponent<Text>().text = "";
         yield return new WaitForSeconds(1f);
         ThePlayer.GetComponent<FirstPersonController>().enabled = true;
+        HUD.SetActive(true);
+        slider.SetActive(true);
 
         
     }
