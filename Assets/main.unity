@@ -13018,6 +13018,7 @@ MonoBehaviour:
   inventory: {fileID: 1570730834}
   hud: {fileID: 1376406106}
   Hand: {fileID: 225770654}
+  anim: {fileID: 1084073865}
   HealthBar: {fileID: 1000664804}
 --- !u!65 &835064594
 BoxCollider:
@@ -17384,6 +17385,11 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!95 &1084073865 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9526514, guid: 1d3b1a1513de66247974634911345b98,
+    type: 2}
+  m_PrefabInternal: {fileID: 605288906}
 --- !u!1001 &1088104623
 Prefab:
   m_ObjectHideFlags: 0
