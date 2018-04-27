@@ -52,14 +52,32 @@ public class PlayerManager : MonoBehaviour {
         if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
             anim.SetTrigger("Grab");
-            inventory.AddItem(mItemToPickup);
-            mItemToPickup.OnPickup();
-            hud.CloseMessagePanel();
-            
+            if(mItemToPickup.Name == "MedKit")
+            {
+                mItemToPickup.OnPickup();
+                hud.CloseMessagePanel();
+            }
+            else
+            {
+                inventory.AddItem(mItemToPickup);
+                mItemToPickup.OnPickup();
+                hud.CloseMessagePanel();
+            }
         }
         if (Health <= 0)
         {
             StartCoroutine(Death());
+        }
+        if(Items.Meds > 0)
+        {
+            Health += 50;
+            HealthBar.value += 0.5f;
+            if(Health > 100)
+            {
+                Health = 100;
+                HealthBar.value = 1;
+            }
+            Items.Meds -= 1; 
         }
     }
     private IInventoryItem mItemToPickup = null;
@@ -75,7 +93,14 @@ public class PlayerManager : MonoBehaviour {
         if (item != null)
         {
             mItemToPickup = item;
-            hud.OpenMessagePanel("");
+            if(mItemToPickup.Name == "MedKit")
+            {
+                hud.OpenMessagePanel("- Press E to heal -");
+            }
+            else
+            {
+                hud.OpenMessagePanel("- Press E to pickup -");
+            }
         }
     }
     void OnTriggerExit(Collider other)

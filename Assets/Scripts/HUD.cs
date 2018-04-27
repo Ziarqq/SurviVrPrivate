@@ -7,11 +7,13 @@ public class HUD : MonoBehaviour {
 
     public Inventory Inventory;
     public GameObject MessagePanel;
+    private Text txt;
 
     void Start()
     {
         Inventory.ItemAdded += InventoryScript_ItemAdded;
         Inventory.ItemRemoved += Inventory_ItemRemoved;
+        txt = MessagePanel.GetComponentInChildren<Text>();
     }
 
     void InventoryScript_ItemAdded(object sender,InventoryEventArgs e)
@@ -58,8 +60,8 @@ public class HUD : MonoBehaviour {
     public void OpenMessagePanel(string text) 
     {
         MessagePanel.SetActive(true);
-
-        //TODO: set text when we will use this for other messages as well
+        txt.text = text;
+        
     }
     public void CloseMessagePanel()
     {
