@@ -45,7 +45,7 @@ public class PlayerManager : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && ThePlayer.GetComponent<FirstPersonController>().enabled)
         {
             anim.SetTrigger("Attack");
         }

@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PinReal : MonoBehaviour {
 
     public InputField inputfield;
     public Animator anim;
+    public GameObject ThePlayer;
+    public GameObject trigger;
 
     public void Text(string guess)
     {
         inputfield.text = "";
-        if(guess == "1914")
+        if (guess == "1914")
         {
-            Debug.Log("You geessesd it");
             anim.SetTrigger("Doors");
+            ThePlayer.GetComponent<FirstPersonController>().enabled = true;
+            trigger.GetComponent<Collider>().enabled = false;
             gameObject.SetActive(false);
 
         }
         else
         {
-            Debug.Log("nope");
+            ThePlayer.GetComponent<FirstPersonController>().enabled = true;
         }
     }
 }
