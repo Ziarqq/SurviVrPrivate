@@ -6,6 +6,11 @@ public class JumpscareJack : MonoBehaviour {
     public AudioSource laught;
     public AudioSource JackSong;
 
+    private void Start()
+    {
+        laught.volume = 0.4f;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         StartCoroutine(Jumpscare());
@@ -17,5 +22,7 @@ public class JumpscareJack : MonoBehaviour {
         laught.Play();
         yield return new WaitForSeconds(3f);
         JackSong.Play();
+        gameObject.SetActive(false);
     }
+
 }

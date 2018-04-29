@@ -10,6 +10,7 @@ public class PinReal : MonoBehaviour {
     public Animator anim;
     public GameObject ThePlayer;
     public GameObject trigger;
+    public GameObject Wall;
 
     public void Text(string guess)
     {
@@ -17,6 +18,7 @@ public class PinReal : MonoBehaviour {
         if (guess == "1914")
         {
             anim.SetTrigger("Doors");
+            Wall.SetActive(false);
             ThePlayer.GetComponent<FirstPersonController>().enabled = true;
             trigger.GetComponent<Collider>().enabled = false;
             gameObject.SetActive(false);
