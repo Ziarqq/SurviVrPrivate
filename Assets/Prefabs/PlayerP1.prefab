@@ -680,6 +680,8 @@ GameObject:
   - component: {fileID: 65390364038430210}
   - component: {fileID: 114892250573215566}
   - component: {fileID: 114612481405884030}
+  - component: {fileID: 114672402735176796}
+  - component: {fileID: 114257335156212590}
   m_Layer: 0
   m_Name: PlayerP1
   m_TagString: Player
@@ -3249,6 +3251,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedWeapon: 0
+--- !u!114 &114257335156212590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1518854418544584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &114505022991506364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3363,13 +3386,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThePlayer: {fileID: 1518854418544584}
-  DeathScene: {fileID: 0}
-  DeathText: {fileID: 0}
-  inventory: {fileID: 0}
-  hud: {fileID: 0}
+  DeathScene: {fileID: 1914052813997146, guid: a3da4c17af1707741a984bde89cf2df3, type: 2}
+  DeathText: {fileID: 1163096007376968, guid: a3da4c17af1707741a984bde89cf2df3, type: 2}
+  inventory: {fileID: 114960360809570866, guid: c749ced65a424b745b9e46774076756e,
+    type: 2}
+  hud: {fileID: 114570831961980282, guid: 42657c95f1a954a448b43832fb00024e, type: 2}
   Hand: {fileID: 1493207208630232}
   anim: {fileID: 95835886164287618}
-  HealthBar: {fileID: 0}
+  HealthBar: {fileID: 114528214549675074, guid: a3da4c17af1707741a984bde89cf2df3,
+    type: 2}
+--- !u!114 &114672402735176796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1518854418544584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 8
+    i1: 22
+    i2: 90
+    i3: 254
+    i4: 136
+    i5: 79
+    i6: 161
+    i7: 228
+    i8: 43
+    i9: 180
+    i10: 241
+    i11: 203
+    i12: 205
+    i13: 139
+    i14: 9
+    i15: 7
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114892250573215566
 MonoBehaviour:
   m_ObjectHideFlags: 1
