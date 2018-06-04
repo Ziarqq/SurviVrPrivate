@@ -20,7 +20,7 @@ public class GetOutOfHere : MonoBehaviour {
         Inventory.SetActive(false);
         Slider.SetActive(false);
         Message.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         Message.SetActive(false);
         ThePlayer.GetComponent<FirstPersonController>().enabled = true;
         gameObject.SetActive(false);
