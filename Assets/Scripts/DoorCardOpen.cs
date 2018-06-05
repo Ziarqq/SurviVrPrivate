@@ -13,6 +13,7 @@ public class DoorCardOpen : MonoBehaviour {
     public GameObject ExtraCrosshair;
     public AudioSource Sound;
     public Animation anim;
+    public GameObject Text;
     private bool GotCards;
 
     void Update()
@@ -46,6 +47,7 @@ public class DoorCardOpen : MonoBehaviour {
                 ActionText.SetActive(false);
                 anim.Play("DoorOpenAnim");
                 Sound.Play();
+                Text.SetActive(false);
                 StartCoroutine(DoorClose());
             }
             else

@@ -20,6 +20,7 @@ public class FINAL : MonoBehaviour {
     {
         StartCoroutine(Counter());
         FinishTrigger.SetActive(true);
+        Car.SetActive(true);
     }
 
     IEnumerator Counter()
@@ -48,6 +49,7 @@ public class FINAL : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         count.text = "THE CAR IS GONE...";
         MadeIt = false;
+        Car.SetActive(false);
 
 
 
