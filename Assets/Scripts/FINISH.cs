@@ -29,7 +29,7 @@ public class FINISH : MonoBehaviour {
 
     IEnumerator Finish()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(8f);
         Player.GetComponent<FirstPersonController>().enabled = false;
         FinalMessage.SetActive(false);
         Credits.SetActive(true);

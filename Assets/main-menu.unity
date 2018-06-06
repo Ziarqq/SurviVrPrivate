@@ -1478,7 +1478,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1044538784905538, guid: eab9197b02a3f9b48b9f00ea0590635d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114588626344871028, guid: eab9197b02a3f9b48b9f00ea0590635d,
         type: 2}
@@ -1636,7 +1636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &542512149
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2341,10 +2341,10 @@ RectTransform:
   m_Father: {fileID: 542512149}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 45}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 269.16193, y: -94.37424}
+  m_SizeDelta: {x: 458.32385, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915050252
 MonoBehaviour:
@@ -3154,10 +3154,10 @@ RectTransform:
   m_Father: {fileID: 2114759087}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 269.16193, y: -209.74725}
-  m_SizeDelta: {x: 458.32385, y: 35.49939}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1161802288
 MonoBehaviour:
@@ -3356,10 +3356,10 @@ RectTransform:
   m_Father: {fileID: 2114759087}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 269.16193, y: -138.74847}
-  m_SizeDelta: {x: 458.32385, y: 35.49939}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1177408992
 MonoBehaviour:
@@ -4730,10 +4730,10 @@ RectTransform:
   m_Father: {fileID: 542512149}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 45}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 269.16193, y: -183.12271}
+  m_SizeDelta: {x: 458.32385, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1642869250
 MonoBehaviour:
@@ -4953,10 +4953,10 @@ RectTransform:
   m_Father: {fileID: 2114759087}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 269.16193, y: -67.749695}
-  m_SizeDelta: {x: 458.32385, y: 35.49939}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1660947173
 MonoBehaviour:
@@ -5207,10 +5207,10 @@ RectTransform:
   m_Father: {fileID: 2114759087}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 269.16193, y: -174.24786}
-  m_SizeDelta: {x: 458.32385, y: 35.49939}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808770630
 MonoBehaviour:
@@ -5813,10 +5813,10 @@ RectTransform:
   m_Father: {fileID: 2114759087}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 269.16193, y: -103.249084}
-  m_SizeDelta: {x: 458.32385, y: 35.49939}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974082768
 MonoBehaviour:
@@ -5977,7 +5977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2114759087
 RectTransform:
   m_ObjectHideFlags: 0
