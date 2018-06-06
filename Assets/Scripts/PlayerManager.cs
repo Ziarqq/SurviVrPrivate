@@ -51,7 +51,6 @@ public class PlayerManager : MonoBehaviour {
         }
         if(mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
-            anim.SetTrigger("Grab");
             if(mItemToPickup.Name == "MedKit")
             {
                 mItemToPickup.OnPickup();
